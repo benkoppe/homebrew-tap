@@ -1,4 +1,4 @@
-# benkoppe Tap
+# `benkoppe` Homebrew Tap
 
 Welcome to my homebrew tap! To install a cask:
 
