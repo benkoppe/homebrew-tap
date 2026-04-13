@@ -2,14 +2,18 @@ cask "blink" do
   version "0.0.7"
   sha256 "d353bc8057abcd71fb9cbcafa9b324f08ccf758e70f13b9fbd9fc75bb3bd3881"
 
-  url "https://github.com/benkoppe/Blink/releases/download/v#{version}/Blink.dmg"
+  url "https://github.com/benkoppe/Blink/releases/download/v#{version}/Blink.dmg",
+      verified: "github.com/benkoppe/Blink/"
   name "Blink"
-  desc "Instant sapce switcher"
+  desc "Instant sapce switches"
   homepage "https://github.com/benkoppe/Blink"
 
+  auto_updates true
   depends_on macos: ">= :ventura"
 
   app "Blink.app"
 
-  zap trash: "~/Library/Preferences/com.thekoppe.Blink.plist"
+  zap trash: [
+    "~/Library/Preferences/com.thekoppe.Blink.plist",
+  ]
 end
