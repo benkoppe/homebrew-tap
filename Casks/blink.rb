@@ -1,6 +1,6 @@
 cask "blink" do
-  version "0.0.11"
-  sha256 "c15198df7a583f151117588e84844f07b8e341e69fc9be1f3eec30a1014b9623"
+  version "0.0.12"
+  sha256 "afdb6ac094c3b72b74e7040fb31b5a75728c95632c25341ea876308ea629b0d8"
 
   url "https://github.com/benkoppe/Blink/releases/download/v#{version}/Blink.dmg",
       verified: "github.com/benkoppe/Blink/"
